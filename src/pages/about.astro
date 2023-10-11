@@ -1,0 +1,183 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="cv Rudy" description="About Rudy's CV">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="Mon CV et mon parcours"
+				tagline="Un parcours d’apprentissage, de croissance et de développement..."
+			>
+			<section>
+				<h2 class="section-title"></h2>
+				<div class="download-cv">
+					<a href="../Cv.png" download="Rudy-CV.png" class="download-button">
+						Télécharger mon CV ici 😀
+					</a>
+			</section>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/devops.png"
+					alt="Rudy at work"
+				/>
+			</Hero>
+
+			<!-- Section Expérience professionnelle -->
+			<section>
+				<h2 class="section-title ">Expérience professionnelle:</h2>
+				<div class="content">
+					<h4>Développeur en alternance (2021 - 2023)</h4>
+					<ul>
+						<li>Mise en place d’un crawler pour remplir des bases de données pour une application médicale en TypeScript.</li>
+						<li>Apprentissage Git / Github.</li>
+						<li>Traitement de chaînes de caractères avec expressions régulières.</li>
+						<li>Manipulation du DOM.</li>
+					</ul>
+					<br>
+					<h4>2021-2022 (6 mois)</h4>
+					<p>Saisie informatique pour une application médicale.</p>
+
+				</div>
+			</section>
+
+			<!-- Section Expériences vécues -->
+			<section>
+				<h3 class="section-title ">Expériences vécues :</h3>
+				<div class="content">
+					<h4>2020</h4>
+					<p>Voyage au Royaume-Uni pour perfectionner mon anglais. Stages dans l’armée de l’air pour les sélections eopn et eopan.</p>
+				</div>
+			</section>
+
+			<!-- Section Centres d'intérêts -->
+			<section>
+				<h2 class="section-title ">Centres d'intérêts :</h2>
+				<div class="content">
+					<p>Sport, Cuisine, Musique, Aviation, Sciences, Automobile.</p>
+				</div>
+			</section>
+
+			<!-- Section Formation -->
+			<section>
+				<h2 class="section-title">Formation :</h2>
+				<div class="content">
+					<p><h4>2022 - 2024:</h4> BTS SIO Option SLAM en alternance à l'école ENSITECH</p>
+					<p><h4>2020:</h4> L1 de Droit à la Faculté de Tours</p>
+					<p><h4>2019:</h4> Diplôme du Baccalauréat Général Spécialité Scientifique mention Européenne au Lycée Fulbert – Chartres (28)</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+
+<style>
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Augmente l'espace entre le titre et le contenu */
+    color: #333; /* Couleur de texte plus foncée */
+}
+
+.section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+    text-align: left;  /* Ajout de cette ligne */
+}
+
+/* Styles pour le mode nuit */
+[data-theme='dark'] .section-title {
+    color: #ddd;  /* Couleur de texte plus claire en mode nuit */
+}
+
+[data-theme='dark'] body {
+    background-color: #222;  /* Arrière-plan plus foncé en mode nuit */
+    color: #ddd;  /* Couleur de texte plus claire en mode nuit */
+}
+
+.content {
+    grid-column: 2 / 4;
+	color: var(--gray-0);
+}
+
+.content h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem; /* Augmente la taille des sous-titres */
+}
+
+.content ul, 
+.content p {
+    margin-bottom: 0.5rem; /* Espace entre les éléments */
+}
+
+.content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+}
+
+.content :global(a:hover),
+.content :global(a:focus) {
+    text-decoration-color: currentColor;
+}
+
+@media (min-width: 50em) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+        grid-column-start: 2;
+    }
+
+    section {
+        display: contents;
+        font-size: var(--text-lg);
+    }
+}
+
+.download-cv {
+    margin-top: 1rem;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #2c3e50;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ajoute une ombre */
+}
+
+.download-button:hover {
+    background-color: #34495e;
+}
+
+</style>

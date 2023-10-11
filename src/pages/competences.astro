@@ -1,0 +1,255 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="Compétences | Rudy Gault" description="compétences de Rudy">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="Compétences"
+				tagline="Merci de votre visite. Découvrez ci-dessous mes compétences et mon parcours professionnel."
+			>
+			</Hero>
+
+            <section>
+                <h2 class="section-title"></h2>
+                <div class="content">
+                    <div class="skill-item">
+                        <label for="js">JavaScript (JS)</label>
+                        <div class="progress-bar" id="js">
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box null"></div>
+                            <div class="progress-box null"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <label for="js">Typescript (TS)</label>
+                        <div class="progress-bar" id="js">
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box partial"></div>
+                            <div class="progress-box null"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <label for="js">Expressions Regulières</label>
+                        <div class="progress-bar" id="js">
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <label for="js">Git</label>
+                        <div class="progress-bar" id="js">
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box null"></div>
+                            <div class="progress-box null"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <label for="js">GitHub</label>
+                        <div class="progress-bar" id="js">
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box null"></div>
+                            <div class="progress-box null"></div>
+                            <div class="progress-box null"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <label for="js">Merise</label>
+                        <div class="progress-bar" id="js">
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box null"></div>
+                            <div class="progress-box null"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <label for="js">DOM Manipulation</label>
+                        <div class="progress-bar" id="js">
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box partial"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <label for="js">VS Code</label>
+                        <div class="progress-bar" id="js">
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box null">
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <label for="js">Node.JS</label>
+                        <div class="progress-bar" id="js">
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box null"></div>
+                            <div class="progress-box null"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <label for="js">Apprentissage Azure (AZ-900)</label>
+                        <div class="progress-bar" id="js">
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box active"></div>
+                            <div class="progress-box partial"></div>
+                            <div class="progress-box partial"></div>
+                            <div class="progress-box null"></div>
+                            <div class="progress-box null"></div>
+                        </div>
+                    </div>
+            </section>
+            
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+    .skill-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem; /* Augmentez la marge pour ajouter plus d'espace entre les compétences */
+        margin-top: 2rem
+    }
+
+    .skill-item label {
+        margin-top: 0.5rem;
+        font-weight: bold;
+    }
+
+    .progress-bar {
+        display: flex;
+    }
+
+    .progress-box {
+    width: 10%;
+    height: 1rem;
+    border: 1px solid #000; /* Bordure entre les cases */
+    background-color: #fff; /* Couleur par défaut pour les cases non acquises */
+}
+
+.progress-box.active {
+    background-color: #9B5FB5; /* Couleur pour les cases acquises */
+}
+
+.progress-box.partial {
+    background-color: #D9ADE5; /* Couleur pour les cases partiellement acquises */
+}
+
+.progress-box.null {
+    background-color: #fff; /* Couleur pour les cases non acquises */
+}
+
+.skill-logo {
+    width: 40px; /* ou toute autre taille qui vous convient */
+    height: auto; /* maintient l'aspect ratio de l'image */
+}
+
+
+</style>
