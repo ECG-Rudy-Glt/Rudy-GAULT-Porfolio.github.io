@@ -1,11 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ContactCTA from '../components/ContactCTA.astro';
-import PortfolioPreview from '../components/PortfolioPreview.astro';
 import Hero from '../components/Hero.astro';
-import Grid from '../components/Grid.astro';
-import Content from '../content/work/veille.md'
-
+import cv from '../../assets/CV.pdf'
 ---
 
 <BaseLayout
@@ -16,15 +13,56 @@ import Content from '../content/work/veille.md'
         <main class="wrapper stack gap-8">
             <Hero
                 title="Ma veille informatique"
-                tagline="Vous pouvez ici découvrir ma veille informatique sur DevSecOps."
+                tagline="Vous pouvez ici découvrir ma veille informatique sur le theme DevSecOps."
                 align="start"
             />
-
-				<Content>
-				</Content>
-
+            <section class="content-section">
+				<h2 class="section-title">Veille Informatique</h2>
+				<div class="pdf-display">
+					<iframe src={cv} frameborder="10" allowfullscreen></iframe>
+				</div>
+                <div class="download-cv">
+                    <a href={cv} download="CV Rudy.pdf" class="download-button">
+                        Télécharger mon CV 🧑🏻‍💻
+                    </a>
+                </div>
+			</section>
         </main>
         <ContactCTA />
     </div>
 </BaseLayout>
 
+<style>
+.content-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.markdown-content {
+    text-align: left;
+    font-size: 0.875rem;  
+    max-width: 800px;  
+}
+
+.section-title {
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+    text-align: center;  
+}
+
+.download-button {
+    margin-bottom: 1rem;  
+    text-align: center;
+}
+
+.pdf-display iframe {
+    border: none;  
+    width: 100%;   // occupe 90% de la largeur de son conteneur
+    height: 100%; // occupe 75% de la hauteur de la fenêtre du navigateur
+    display: block;
+    margin: 0 auto; // centré horizontalement
+}
+</style>

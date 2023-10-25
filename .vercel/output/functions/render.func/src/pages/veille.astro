@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import PortfolioPreview from '../components/PortfolioPreview.astro';
+import Hero from '../components/Hero.astro';
+import Grid from '../components/Grid.astro';
+import Content from '../content/work/veille.md'
+
+---
+
+<BaseLayout
+    title="Mon Travail | Gault Rudy"
+    description="Learn about Gault Rudy's most recent projects"
+>
+    <div class="stack gap-20">
+        <main class="wrapper stack gap-8">
+            <Hero
+                title="Ma veille informatique"
+                tagline="Vous pouvez ici découvrir ma veille informatique sur DevSecOps."
+                align="start"
+            />
+
+				<Content>
+				</Content>
+
+        </main>
+        <ContactCTA />
+    </div>
+</BaseLayout>
+
