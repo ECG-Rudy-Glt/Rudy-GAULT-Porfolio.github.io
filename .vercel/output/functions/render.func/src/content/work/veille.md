@@ -1,14 +1,13 @@
 ---
-title: Veille Informatique DevSecOps
+title: Veille Informatique DevSecOps (Ecole)
 publishDate: 2019-10-02 00:00:00
 img: /assets/veille.png
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 description: |
-  We developed brand positioning and design assets for the launch
-  of a new colored water product.
+
 tags:
-  - Design
-  - Branding
+  - DevOps
+  - Security
 ---
 
 <h2>Veille Technologique : L'évolution de DevSecOps en 2023 </h1>
