@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
-import cv from '../../public/assets/CV.pdf'
+import CV from '../../public/assets/CVRudy .pdf'
 ---
 
 <BaseLayout title="cv Rudy" description="About Rudy's CV">
@@ -13,63 +13,18 @@ import cv from '../../public/assets/CV.pdf'
 				title="Mon CV et mon parcours"
 				tagline="Un parcours d’apprentissage, de croissance et de développement..."
 			>
-			<section>
-				<h2 class="section-title"></h2>
-				<div class="download-cv">
-					<a href={cv} download="cv Rudy.pdf" class="download-button">
-						Télécharger mon CV ici 😀
-					</a>
-			</section>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/devops.png"
-					alt="Rudy at work"
-				/>
+			<div class="pdf-display">
+				<iframe src={CV} frameborder="10" allowfullscreen></iframe>
+			</div>
 			</Hero>
 
 			<!-- Section Expérience professionnelle -->
 			<section>
-				<h2 class="section-title ">Expérience professionnelle:</h2>
+				<h2 class="section-title ">Présentation projet professionnel:</h2>
 				<div class="content">
-					<h4>Développeur en alternance (2021 - 2023)</h4>
-					<ul>
-						<li>Mise en place d’un crawler pour remplir des bases de données pour une application médicale en TypeScript.</li>
-						<li>Apprentissage Git / Github.</li>
-						<li>Traitement de chaînes de caractères avec expressions régulières.</li>
-						<li>Manipulation du DOM.</li>
-					</ul>
-					<br>
-					<h4>2021-2022 (6 mois)</h4>
-					<p>Saisie informatique pour une application médicale.</p>
-
-				</div>
-			</section>
-
-			<!-- Section Expériences vécues -->
-			<section>
-				<h3 class="section-title ">Expériences vécues :</h3>
-				<div class="content">
-					<h4>2020</h4>
-					<p>Voyage au Royaume-Uni pour perfectionner mon anglais. Stages dans l’armée de l’air pour les sélections eopn et eopan.</p>
-				</div>
-			</section>
-
-			<!-- Section Centres d'intérêts -->
-			<section>
-				<h2 class="section-title ">Centres d'intérêts :</h2>
-				<div class="content">
-					<p>Sport, Cuisine, Musique, Aviation, Sciences, Automobile.</p>
-				</div>
-			</section>
-
-			<!-- Section Formation -->
-			<section>
-				<h2 class="section-title">Formation :</h2>
-				<div class="content">
-					<p><h4>2022 - 2024:</h4> BTS SIO Option SLAM en alternance à l'école ENSITECH</p>
-					<p><h4>2020:</h4> L1 de Droit à la Faculté de Tours</p>
-					<p><h4>2019:</h4> Diplôme du Baccalauréat Général Spécialité Scientifique mention Européenne au Lycée Fulbert – Chartres (28)</p>
+					<p>
+						Passionné par le développement et les opérations informatiques, je suis un étudiant en BTS SIO, spécialisé en Solutions Logicielles et Applications Métiers (SLAM), actuellement en alternance chez Ethan Consulting. Cette expérience enrichissante m'a doté de compétences solides en développement et en gestion du cycle de vie des logiciels. Animé par l'ambition de devenir un expert en DevOps, je vise à intégrer le programme de 3e année de SupInfo en alternance, où je pourrai approfondir mes connaissances et compétences dans ce domaine. Parallèlement à mes études et mon alternance, je me forme activement en DevOps à travers diverses formations complémentaires. Découvrez plus sur mes compétences en explorant l'onglet dédié sur ce site.
+					</p>
 				</div>
 			</section>
 		</main>
@@ -180,5 +135,22 @@ section {
 .download-button:hover {
     background-color: #34495e;
 }
+
+.pdf-display {
+    width: 120%;  
+    height: 89dvh;
+    overflow: hidden; 
+}
+
+
+.pdf-display iframe {
+    border: none;
+    width: 90%;   
+    height: 100%; 
+    display: block;
+    margin: 0 auto; 
+}
+
+
 
 </style>

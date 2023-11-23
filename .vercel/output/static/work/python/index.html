@@ -42,9 +42,9 @@
 			<nav class="astro-DMQPWCEC">
 	<div class="menu-header astro-DMQPWCEC">
 		<a href="/" class="site-title astro-DMQPWCEC">
-			<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256" aria-hidden="true" stroke="url(#icon-gradient-yys9rmkh)" fill="url(#icon-gradient-yys9rmkh)" style="--size:1.6em" class="astro-PATNJMLL">
+			<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256" aria-hidden="true" stroke="url(#icon-gradient-26vpah7vg)" fill="url(#icon-gradient-26vpah7vg)" style="--size:1.6em" class="astro-PATNJMLL">
 	<g class="astro-PATNJMLL"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="m80 96 40 32-40 32m56 0h40"/><rect width="192" height="160" x="32" y="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.97" rx="8.5"/></g>
-	<linearGradient id="icon-gradient-yys9rmkh" x1="23" x2="235" y1="43" y2="202" gradientUnits="userSpaceOnUse" class="astro-PATNJMLL">
+	<linearGradient id="icon-gradient-26vpah7vg" x1="23" x2="235" y1="43" y2="202" gradientUnits="userSpaceOnUse" class="astro-PATNJMLL">
 				<stop stop-color="var(--gradient-stop-1)" class="astro-PATNJMLL"></stop>
 				<stop offset=".5" stop-color="var(--gradient-stop-2)" class="astro-PATNJMLL"></stop>
 				<stop offset="1" stop-color="var(--gradient-stop-3)" class="astro-PATNJMLL"></stop>
@@ -192,7 +192,7 @@
 	
 						<div class="details astro-QWEKCIQP">
 							<div class="tags astro-QWEKCIQP">
-								<div class="pill astro-2QEYWK4B">DevOps</div><div class="pill astro-2QEYWK4B">Security</div>
+								<div class="pill astro-2QEYWK4B">Python</div><div class="pill astro-2QEYWK4B">Algo</div>
 							</div>
 							<p class="description astro-QWEKCIQP"></p>
 						</div>
@@ -204,7 +204,104 @@
 				<div class="stack gap-10 content astro-QWEKCIQP">
 					<img src="/assets/veille.png" alt="Soft pink and baby blue water ripples together in a subtle texture." class="astro-QWEKCIQP">
 					<div class="content astro-QWEKCIQP">
-						<h2>Jeux Python 1e année. </h2>
+						<h2>Exemples jeux Python 1e année. </h2>
+<h5> Vérificateur de Palindrome en Python </h5>
+<p>Ce script verifie si un mot est un palindrome ou non :</p>
+<pre is:raw="" class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color: #F97583">def</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">est_palindrome</span><span style="color: #E1E4E8">(phrase):</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #6A737D"># On nettoie la phrase en enlevant les espaces, la ponctuation et en mettant en minuscule</span></span>
+<span class="line"><span style="color: #E1E4E8">    phrase_propre </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">''</span><span style="color: #E1E4E8">.join(char.lower() </span><span style="color: #F97583">for</span><span style="color: #E1E4E8"> char </span><span style="color: #F97583">in</span><span style="color: #E1E4E8"> phrase </span><span style="color: #F97583">if</span><span style="color: #E1E4E8"> char.isalnum())</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #6A737D"># On compare la chaîne nettoyée à sa version inversée</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #F97583">return</span><span style="color: #E1E4E8"> phrase_propre </span><span style="color: #F97583">==</span><span style="color: #E1E4E8"> phrase_propre[::</span><span style="color: #F97583">-</span><span style="color: #79B8FF">1</span><span style="color: #E1E4E8">]</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A737D"># Exemple d'utilisation</span></span>
+<span class="line"><span style="color: #E1E4E8">texte </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">input</span><span style="color: #E1E4E8">(</span><span style="color: #9ECBFF">"Entrez un texte pour vérifier s'il s'agit d'un palindrome : "</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"><span style="color: #F97583">if</span><span style="color: #E1E4E8"> est_palindrome(texte):</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #79B8FF">print</span><span style="color: #E1E4E8">(</span><span style="color: #9ECBFF">"C'est un palindrome !"</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"><span style="color: #F97583">else</span><span style="color: #E1E4E8">:</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #79B8FF">print</span><span style="color: #E1E4E8">(</span><span style="color: #9ECBFF">"Ce n'est pas un palindrome."</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"></span></code></pre>
+<h5> Générateur de Mot de Passe en Python </h5> 
+<p>Ce script génère un mot de passe sécurisé avec une combinaison aléatoire de lettres, chiffres et symboles :</p>
+<pre is:raw="" class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color: #F97583">import</span><span style="color: #E1E4E8"> random</span></span>
+<span class="line"><span style="color: #F97583">import</span><span style="color: #E1E4E8"> string</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #F97583">def</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">generer_mot_de_passe</span><span style="color: #E1E4E8">(taille):</span></span>
+<span class="line"><span style="color: #E1E4E8">    caracteres </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> string.ascii_letters </span><span style="color: #F97583">+</span><span style="color: #E1E4E8"> string.digits </span><span style="color: #F97583">+</span><span style="color: #E1E4E8"> string.punctuation</span></span>
+<span class="line"><span style="color: #E1E4E8">    mot_de_passe </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">''</span><span style="color: #E1E4E8">.join(random.choice(caracteres) </span><span style="color: #F97583">for</span><span style="color: #E1E4E8"> i </span><span style="color: #F97583">in</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">range</span><span style="color: #E1E4E8">(taille))</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #F97583">return</span><span style="color: #E1E4E8"> mot_de_passe</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #E1E4E8">taille </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">int</span><span style="color: #E1E4E8">(</span><span style="color: #79B8FF">input</span><span style="color: #E1E4E8">(</span><span style="color: #9ECBFF">"Entrez la taille du mot de passe : "</span><span style="color: #E1E4E8">))</span></span>
+<span class="line"><span style="color: #79B8FF">print</span><span style="color: #E1E4E8">(</span><span style="color: #9ECBFF">"Votre nouveau mot de passe est : "</span><span style="color: #E1E4E8">, generer_mot_de_passe(taille))</span></span></code></pre>
+<h5> Tic-Tac-Toe </h5>
+<p>Un jeu de Tic-Tac-Toe simple pour deux joueurs jouant à tour de rôle dans la console.</p>
+<pre is:raw="" class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color: #F97583">def</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">afficher_plateau</span><span style="color: #E1E4E8">(plateau):</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #F97583">for</span><span style="color: #E1E4E8"> ligne </span><span style="color: #F97583">in</span><span style="color: #E1E4E8"> plateau:</span></span>
+<span class="line"><span style="color: #E1E4E8">        </span><span style="color: #79B8FF">print</span><span style="color: #E1E4E8">(</span><span style="color: #9ECBFF">" | "</span><span style="color: #E1E4E8">.join(ligne))</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #79B8FF">print</span><span style="color: #E1E4E8">()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #F97583">def</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">prise_de_position</span><span style="color: #E1E4E8">(plateau, position, joueur):</span></span>
+<span class="line"><span style="color: #E1E4E8">    ligne, colonne </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> position</span></span>
+<span class="line"><span style="color: #E1E4E8">    plateau[ligne][colonne] </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> joueur</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #F97583">def</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">verifier_gagnant</span><span style="color: #E1E4E8">(plateau, joueur):</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #6A737D"># Vérifier les lignes</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #F97583">for</span><span style="color: #E1E4E8"> ligne </span><span style="color: #F97583">in</span><span style="color: #E1E4E8"> plateau:</span></span>
+<span class="line"><span style="color: #E1E4E8">        </span><span style="color: #F97583">if</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">all</span><span style="color: #E1E4E8">(cellule </span><span style="color: #F97583">==</span><span style="color: #E1E4E8"> joueur </span><span style="color: #F97583">for</span><span style="color: #E1E4E8"> cellule </span><span style="color: #F97583">in</span><span style="color: #E1E4E8"> ligne):</span></span>
+<span class="line"><span style="color: #E1E4E8">            </span><span style="color: #F97583">return</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">True</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #6A737D"># Vérifier les colonnes</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #F97583">for</span><span style="color: #E1E4E8"> colonne </span><span style="color: #F97583">in</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">range</span><span style="color: #E1E4E8">(</span><span style="color: #79B8FF">3</span><span style="color: #E1E4E8">):</span></span>
+<span class="line"><span style="color: #E1E4E8">        </span><span style="color: #F97583">if</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">all</span><span style="color: #E1E4E8">(plateau[ligne][colonne] </span><span style="color: #F97583">==</span><span style="color: #E1E4E8"> joueur </span><span style="color: #F97583">for</span><span style="color: #E1E4E8"> ligne </span><span style="color: #F97583">in</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">range</span><span style="color: #E1E4E8">(</span><span style="color: #79B8FF">3</span><span style="color: #E1E4E8">)):</span></span>
+<span class="line"><span style="color: #E1E4E8">            </span><span style="color: #F97583">return</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">True</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #6A737D"># Vérifier les diagonales</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #F97583">if</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">all</span><span style="color: #E1E4E8">(plateau[i][i] </span><span style="color: #F97583">==</span><span style="color: #E1E4E8"> joueur </span><span style="color: #F97583">for</span><span style="color: #E1E4E8"> i </span><span style="color: #F97583">in</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">range</span><span style="color: #E1E4E8">(</span><span style="color: #79B8FF">3</span><span style="color: #E1E4E8">)) </span><span style="color: #F97583">or</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">all</span><span style="color: #E1E4E8">(plateau[i][</span><span style="color: #79B8FF">2</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">-</span><span style="color: #E1E4E8"> i] </span><span style="color: #F97583">==</span><span style="color: #E1E4E8"> joueur </span><span style="color: #F97583">for</span><span style="color: #E1E4E8"> i </span><span style="color: #F97583">in</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">range</span><span style="color: #E1E4E8">(</span><span style="color: #79B8FF">3</span><span style="color: #E1E4E8">)):</span></span>
+<span class="line"><span style="color: #E1E4E8">        </span><span style="color: #F97583">return</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">True</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #F97583">return</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">False</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #F97583">def</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">jeu_tic_tac_toe</span><span style="color: #E1E4E8">():</span></span>
+<span class="line"><span style="color: #E1E4E8">    plateau </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> [[</span><span style="color: #9ECBFF">" "</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">for</span><span style="color: #E1E4E8"> _ </span><span style="color: #F97583">in</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">range</span><span style="color: #E1E4E8">(</span><span style="color: #79B8FF">3</span><span style="color: #E1E4E8">)] </span><span style="color: #F97583">for</span><span style="color: #E1E4E8"> _ </span><span style="color: #F97583">in</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">range</span><span style="color: #E1E4E8">(</span><span style="color: #79B8FF">3</span><span style="color: #E1E4E8">)]</span></span>
+<span class="line"><span style="color: #E1E4E8">    joueur_actuel </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">"X"</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #F97583">while</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">True</span><span style="color: #E1E4E8">:</span></span>
+<span class="line"><span style="color: #E1E4E8">        afficher_plateau(plateau)</span></span>
+<span class="line"><span style="color: #E1E4E8">        </span><span style="color: #F97583">try</span><span style="color: #E1E4E8">:</span></span>
+<span class="line"><span style="color: #E1E4E8">            position </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">input</span><span style="color: #E1E4E8">(</span><span style="color: #F97583">f</span><span style="color: #9ECBFF">"Joueur </span><span style="color: #79B8FF">{</span><span style="color: #E1E4E8">joueur_actuel</span><span style="color: #79B8FF">}</span><span style="color: #9ECBFF">, entrez votre coup (ligne,colonne): "</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"><span style="color: #E1E4E8">            ligne, colonne </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">map</span><span style="color: #E1E4E8">(</span><span style="color: #79B8FF">int</span><span style="color: #E1E4E8">, position.split(</span><span style="color: #9ECBFF">','</span><span style="color: #E1E4E8">))</span></span>
+<span class="line"><span style="color: #E1E4E8">            </span><span style="color: #F97583">if</span><span style="color: #E1E4E8"> plateau[ligne][colonne] </span><span style="color: #F97583">!=</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">" "</span><span style="color: #E1E4E8">:</span></span>
+<span class="line"><span style="color: #E1E4E8">                </span><span style="color: #79B8FF">print</span><span style="color: #E1E4E8">(</span><span style="color: #9ECBFF">"Position occupée. Essayez à nouveau."</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"><span style="color: #E1E4E8">                </span><span style="color: #F97583">continue</span></span>
+<span class="line"><span style="color: #E1E4E8">        </span><span style="color: #F97583">except</span><span style="color: #E1E4E8"> (</span><span style="color: #79B8FF">ValueError</span><span style="color: #E1E4E8">, </span><span style="color: #79B8FF">IndexError</span><span style="color: #E1E4E8">):</span></span>
+<span class="line"><span style="color: #E1E4E8">            </span><span style="color: #79B8FF">print</span><span style="color: #E1E4E8">(</span><span style="color: #9ECBFF">"Entrée invalide. Assurez-vous de saisir ligne,colonne."</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"><span style="color: #E1E4E8">            </span><span style="color: #F97583">continue</span></span>
+<span class="line"><span style="color: #E1E4E8">        prise_de_position(plateau, (ligne, colonne), joueur_actuel)</span></span>
+<span class="line"><span style="color: #E1E4E8">        </span><span style="color: #F97583">if</span><span style="color: #E1E4E8"> verifier_gagnant(plateau, joueur_actuel):</span></span>
+<span class="line"><span style="color: #E1E4E8">            afficher_plateau(plateau)</span></span>
+<span class="line"><span style="color: #E1E4E8">            </span><span style="color: #79B8FF">print</span><span style="color: #E1E4E8">(</span><span style="color: #F97583">f</span><span style="color: #9ECBFF">"Joueur </span><span style="color: #79B8FF">{</span><span style="color: #E1E4E8">joueur_actuel</span><span style="color: #79B8FF">}</span><span style="color: #9ECBFF"> a gagné!"</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"><span style="color: #E1E4E8">            </span><span style="color: #F97583">break</span></span>
+<span class="line"><span style="color: #E1E4E8">        </span><span style="color: #F97583">if</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">all</span><span style="color: #E1E4E8">(cellule </span><span style="color: #F97583">!=</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">" "</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">for</span><span style="color: #E1E4E8"> ligne </span><span style="color: #F97583">in</span><span style="color: #E1E4E8"> plateau </span><span style="color: #F97583">for</span><span style="color: #E1E4E8"> cellule </span><span style="color: #F97583">in</span><span style="color: #E1E4E8"> ligne):</span></span>
+<span class="line"><span style="color: #E1E4E8">            afficher_plateau(plateau)</span></span>
+<span class="line"><span style="color: #E1E4E8">            </span><span style="color: #79B8FF">print</span><span style="color: #E1E4E8">(</span><span style="color: #9ECBFF">"Match nul!"</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"><span style="color: #E1E4E8">            </span><span style="color: #F97583">break</span></span>
+<span class="line"><span style="color: #E1E4E8">        joueur_actuel </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">"O"</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">if</span><span style="color: #E1E4E8"> joueur_actuel </span><span style="color: #F97583">==</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">"X"</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">else</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">"X"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #E1E4E8"> jeu_tic_tac_toe()</span></span>
+<span class="line"></span></code></pre>
+<h5> Jeu du Devine Nombre </h5>
+<p>Un jeu où l’ordinateur choisit un nombre aléatoire et le joueur doit le deviner.</p>
+<pre is:raw="" class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color: #F97583">import</span><span style="color: #E1E4E8"> random</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #F97583">def</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">jeu_devine_nombre</span><span style="color: #E1E4E8">(max_nombre):</span></span>
+<span class="line"><span style="color: #E1E4E8">    nombre_secret </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> random.randint(</span><span style="color: #79B8FF">1</span><span style="color: #E1E4E8">, max_nombre)</span></span>
+<span class="line"><span style="color: #E1E4E8">    nombre_devine </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">0</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #F97583">while</span><span style="color: #E1E4E8"> nombre_devine </span><span style="color: #F97583">!=</span><span style="color: #E1E4E8"> nombre_secret:</span></span>
+<span class="line"><span style="color: #E1E4E8">        nombre_devine </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">int</span><span style="color: #E1E4E8">(</span><span style="color: #79B8FF">input</span><span style="color: #E1E4E8">(</span><span style="color: #F97583">f</span><span style="color: #9ECBFF">"Devinez le nombre entre 1 et </span><span style="color: #79B8FF">{</span><span style="color: #E1E4E8">max_nombre</span><span style="color: #79B8FF">}</span><span style="color: #9ECBFF">: "</span><span style="color: #E1E4E8">))</span></span>
+<span class="line"><span style="color: #E1E4E8">        </span><span style="color: #F97583">if</span><span style="color: #E1E4E8"> nombre_devine </span><span style="color: #F97583">&#x3C;</span><span style="color: #E1E4E8"> nombre_secret:</span></span>
+<span class="line"><span style="color: #E1E4E8">            </span><span style="color: #79B8FF">print</span><span style="color: #E1E4E8">(</span><span style="color: #9ECBFF">"Plus grand..."</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"><span style="color: #E1E4E8">        </span><span style="color: #F97583">elif</span><span style="color: #E1E4E8"> nombre_devine </span><span style="color: #F97583">></span><span style="color: #E1E4E8"> nombre_secret:</span></span>
+<span class="line"><span style="color: #E1E4E8">            </span><span style="color: #79B8FF">print</span><span style="color: #E1E4E8">(</span><span style="color: #9ECBFF">"Plus petit..."</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #79B8FF">print</span><span style="color: #E1E4E8">(</span><span style="color: #F97583">f</span><span style="color: #9ECBFF">"Félicitations! Le nombre était </span><span style="color: #79B8FF">{</span><span style="color: #E1E4E8">nombre_secret</span><span style="color: #79B8FF">}</span><span style="color: #9ECBFF">."</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #E1E4E8">jeu_devine_nombre(</span><span style="color: #79B8FF">100</span><span style="color: #E1E4E8">)</span></span></code></pre>
 					</div>
 				</div>
 			</main>
