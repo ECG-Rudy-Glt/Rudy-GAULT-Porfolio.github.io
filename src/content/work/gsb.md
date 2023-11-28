@@ -15,6 +15,8 @@ Projet GSB - Gestion des visites
 
 Github du projet: https://github.com/ECG-Rudy-Glt/Projet-GSB---Gestion-des-visites.git
 
+Accès au projet localhost: http://localhost/GSB2/Projet-GSB---Gestion-des-visites/ 
+
 
 
 # Rapport de Projet BTS SIO - Gestion des Visites GSB  
@@ -73,11 +75,17 @@ Pour mener à bien ce projet, nous avons adopté une méthode de travail Agile, 
 
 *Figure 1: Tableau Kanban Agile utilisé pour le projet.* 
 
-  
+
+Nous avons utilisé Git afin de suivre notre projet et de mettre en commun les informations.
+
+![Github Dektop](../../../public/assets/github%20.png)  
+
+*Figure 2: Github desktop pour le suivi de projet*
+
 
 ![Diagramme de Gantt](../../../public/assets/Gant.png) 
 
-*Figure 2: Diagramme de Gantt illustrant la planification du projet.* 
+*Figure 3: Diagramme de Gantt illustrant la planification du projet.* 
 
  
 
@@ -99,7 +107,7 @@ L'un des aspects clés de notre projet était la conception d'une base de donné
 
 ![Modèle Conceptuel de Données Initial](../../../public/assets/oldMcd.png) 
 
-*Figure 3: Le Modèle Conceptuel de Données initial fourni pour le projet.* 
+*Figure 4: Le Modèle Conceptuel de Données initial fourni pour le projet.* 
 
   
 
@@ -113,7 +121,7 @@ Nous avons apporté plusieurs modifications pour améliorer la structure et les 
 
 ![Modèle Conceptuel de Données Amélioré](../../../public/assets/mcd.png) 
 
-*Figure 4: Le Modèle Conceptuel de Données amélioré développé par notre équipe.* 
+*Figure 5: Le Modèle Conceptuel de Données amélioré développé par notre équipe.* 
 
   
 
@@ -155,7 +163,7 @@ Le backend de l'application a été développé en PHP en suivant le modèle MVC
 
 ![Screenshot du code PHP MVC](../../../public/assets/MVC.png) 
 
-*Figure 3: Exemple de code backend PHP MVC.* 
+*Figure 6: Exemple de code backend PHP MVC.* 
 
   
 
@@ -169,7 +177,7 @@ Le frontend a été conçu pour offrir une expérience utilisateur fluide et int
 
 ![Capture d'écran de l'interface](../../../public/assets/front.png) 
 
-*Figure 4: Capture d'écran de l'interface utilisateur de l'application.* 
+*Figure 7: Capture d'écran de l'interface utilisateur de l'application.* 
 
   
 
