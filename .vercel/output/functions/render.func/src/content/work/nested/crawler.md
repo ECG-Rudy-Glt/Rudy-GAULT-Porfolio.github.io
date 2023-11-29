@@ -13,7 +13,7 @@ tags:
   - Regex
 ---
 
-## Contexte, Défis et Complexités:
+## Contexte, Défis et Complexités
 
 Le développement du "Crawler Médical" a été un voyage technique stimulant. La navigation dans le monde du web scraping nécessite précision et adaptabilité, en particulier lors de l'extraction de données médicales essentielles.
 
@@ -25,6 +25,6 @@ Si j'ai bénéficié de l'aide d'experts pour certains algorithmes avancés, l'e
 
 L'utilisation combinée de **regex101** pour les expressions régulières et de **Git/GitHub** pour la gestion collaborative du code a renforcé la robustesse de notre crawler, assurant sa performance et sa résilience dans un environnement web en constante évolution.
 
-## En Résumé:
+## En Résumé
 
 Le Crawler Médical m'a offert une opportunité inestimable d'approfondir mes compétences en programmation tout en m'exposant à des outils et des pratiques avancés. Plus qu'un simple projet de collecte de données, il a été une leçon sur l'importance de la standardisation, de la collaboration et de l'adaptabilité dans le développement technologique.
