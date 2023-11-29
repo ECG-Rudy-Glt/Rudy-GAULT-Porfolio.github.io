@@ -12,7 +12,6 @@ tags:
 Github du projet: https://github.com/arthur469/fruude/tree/main
 
 ## Présentation de Fruude :
-Présentation de Fruude :
 Fruude est un script qui peut vous aider à détecter si un document est frauduleux. Ce logiciel utilise des techniques et des technologies pour analyser les documents et fournir un score de confiance indiquant si le document est authentique ou frauduleux.
 
 Le logiciel possède plusieurs fonctionnalités qui peuvent vous aider à détecter les documents frauduleux :
@@ -39,4 +38,4 @@ Vérifier les signatures numériques : Les développeurs peuvent implémenter un
 
 Implémenter la technologie de reconnaissance optique de caractères (OCR) : Les développeurs peuvent implémenter la technologie OCR qui peut extraire des informations de texte et d’image du document. Ces informations peuvent être analysées pour détecter d’éventuelles incohérences ou irrégularités.
 
-Utiliser le machine Learning : Développer des modèles d’apprentissage automatique capables de détecter les documents frauduleux en entraînant le modèle sur un grand ensemble de données de documents légitimes et frauduleux. Le modèle peut ensuite analyser de nouveaux documents et fournir un score de confiance basé sur la probabilité que le document soit frauduleux.
+Utiliser le machine learning : Développer des modèles d’apprentissage automatique capables de détecter les documents frauduleux en entraînant le modèle sur un grand ensemble de données de documents légitimes et frauduleux. Le modèle peut ensuite analyser de nouveaux documents et fournir un score de confiance basé sur la probabilité que le document soit frauduleux.

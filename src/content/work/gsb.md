@@ -47,7 +47,7 @@ Ce rapport documente le développement de l'application de gestion des visites p
 
 - Floris Sejourné 
 
-- Arthur Brunel 
+- ~~Arthur Brunel~~
 
   
 
