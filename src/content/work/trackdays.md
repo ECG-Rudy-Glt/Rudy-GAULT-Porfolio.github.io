@@ -16,9 +16,9 @@ Lors de ce projet on m'a demandé de me mettre dans la peau d'un préstataire de
 
 J'ai en amont appris le methode Merise afin de parvenir à construire un dictionnaire de données. Celui ci était fait, j'ai pu implémenter mon MCD, mon MLDr et mon MPD.
 
-[Voici la présentation PDF au client pour valider le projet.](/public/assets/trackDay.pdf)
+[Voici la présentation PDF au client pour valider le projet.](/assets/trackDay.pdf)
 
-[Premiere version du Dictionnaire + MCD. A revoir.](/public/assets/dictionnaire.pdf)
+[Premiere version du Dictionnaire + MCD. A revoir.](/assets/dictionnaire.pdf)
 
 
 
