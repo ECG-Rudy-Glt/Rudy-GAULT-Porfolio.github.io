@@ -6,10 +6,10 @@ description: "Programme d'auto-formation en DevOps pour compléter une formation
 tags: [Linux, VmWare, Scripting, Vagrant, Automatisation]
 ---
 
-# Projet Personnel - Apprentissage Autonome DevOps
+<h4> Projet Personnel - Apprentissage Autonome DevOps</h4>
 
-## Objectif
-Développer des compétences en DevOps en complément de ma formation BTS SIO SLAM, en vue d'obtenir un poste en alternance chez Supinfo.
+<h5> Objectif</h5>
+Développer des compétences en DevOps en complément de ma formation BTS SIO SLAM, en vue d'obtenir un poste d'alternant en DevOps en 3e année à Supinfo.
 
 <Strong>Étapes de Formation</Strong>
 
@@ -20,7 +20,6 @@ Développer des compétences en DevOps en complément de ma formation BTS SIO SL
 - Basics of networking
 - Project: Vprofile Project Intro & Setup on VM’s
 
-![Cheat Sheet Linux](/public/assets/linuxCheat.png) 
 ![Visuel d'un fichier Vagrant](/public/assets/vagrantfile.png)
 ![Schéma du premier projet automatisé vagrant](/assets/projetDevOps1.png)
 ![Schéma du premier projet automatisé vagrant](/assets/vagrantProjectHKH.png)
