@@ -11,7 +11,7 @@ tags:
 ---
 Github du projet: https://github.com/arthur469/fruude/tree/main
 
-## Présentation de Fruude :
+## Présentation de Fruude
 Fruude est un script qui peut vous aider à détecter si un document est frauduleux. Ce logiciel utilise des techniques et des technologies pour analyser les documents et fournir un score de confiance indiquant si le document est authentique ou frauduleux.
 
 Le logiciel possède plusieurs fonctionnalités qui peuvent vous aider à détecter les documents frauduleux :
